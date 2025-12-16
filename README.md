@@ -1,8 +1,7 @@
 # DNS Exfiltration Lab
-A simple two-script system for practicing DNS data exfiltration techniques in CTF and penetration testing environments.
+A simple proof of concept two-script system for DNS data exfiltration.
 # Overview
 Exfiltrate data from a target machine by encoding it in DNS queries. The listener captures and decodes the data automatically.
-Setup
 Requirements:
 
 Kali Linux (attacker/listener)
@@ -11,10 +10,10 @@ tcpdump, dig, base64 (pre-installed on most Linux)
 
 # Usage
 1. On Kali (Listener)
-bashsudo ./bash-DNS-listener.sh
+   sudo ./bash-DNS-listener.sh
 Wait for data, then press Ctrl+C to decode
 2. On Target (Exfiltration)
-bash./bash-DNS-exfil.sh
+  ./bash-DNS-exfil.sh
 Enter file path (e.g., /etc/passwd)
 Enter Kali IP address
 3. Check Results
